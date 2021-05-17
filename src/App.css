@@ -1,38 +1,57 @@
 .App {
   text-align: center;
+  min-height: 800px;
+  border: 1px solid black;
+}
+.trackerHeading{
+  font-weight: 800;
+  font-size: 35px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.expenseForm{
+  border: 1px solid;
+  padding: 40px 25px;
+  margin: 75px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.formInput{
+  padding: 20px;
+}
+
+.errorMessage{
+  color: red;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.formButton{
+  margin: 10px;
+}
+
+.transactions{
+  border: 1px solid;
+  padding: 40px 25px;
+  margin: 75px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  .trackerHeading{
+    font-weight: 500;
+    font-size: 25px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .expenseForm{
+    border: 1px solid;
+    padding: 10px 15px;
+    margin: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .transactions{
+    border: 1px solid;
+    padding: 10px 15px;
+    margin: 10px;
+    text-align: left;
+    font-size: 12px;
   }
+  
 }
